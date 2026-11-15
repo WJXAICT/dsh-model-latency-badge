@@ -1,0 +1,12 @@
+{
+  "kind": "language",
+  "resource": "en",
+  "messages": {
+    "dsh-model-latency-badge": {
+      "unavailable": "Unavailable",
+      "title.measured": "Model latency: {ms}ms",
+      "title.unavailable": "Model unavailable: {error}",
+      "title.pending": "Measuring model latency"
+    }
+  }
+}
