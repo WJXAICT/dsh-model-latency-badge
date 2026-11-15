@@ -1,0 +1,65 @@
+{
+  "name": "dsh-model-latency-badge",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Measures each model's first-chunk latency and shows a green millisecond or red unavailable badge on every row of the DSH model picker.",
+  "license": "MIT",
+  "author": "WJXAICT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WJXAICT/dsh-model-latency-badge.git"
+  },
+  "homepage": "https://github.com/WJXAICT/dsh-model-latency-badge#readme",
+  "bugs": {
+    "url": "https://github.com/WJXAICT/dsh-model-latency-badge/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "model",
+    "latency",
+    "benchmark",
+    "ui"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.5 <0.3.0-0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
