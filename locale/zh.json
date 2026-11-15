@@ -1,0 +1,12 @@
+{
+  "kind": "language",
+  "resource": "zh-Hans",
+  "messages": {
+    "dsh-model-latency-badge": {
+      "unavailable": "不可用",
+      "title.measured": "模型测速：{ms}ms",
+      "title.unavailable": "模型不可用：{error}",
+      "title.pending": "模型测速中"
+    }
+  }
+}
